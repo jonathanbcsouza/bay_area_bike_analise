@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Analise_Bay_Area_Bike_Share-NDFDSI</title><script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/A66180AC-41BE-104F-BEED-3E25B05A9E2D/main.js" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Analise_Bay_Area_Bike_Share - Nanodegree Data Foundation</title><script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/A66180AC-41BE-104F-BEED-3E25B05A9E2D/main.js" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11953,7 +11953,8 @@ Com essa informação seria possível avaliar a necessidade de novos recursos e 
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">ls</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Comando para varrer diretório e mostrar arquivos existentes</span>
+<span class="n">ls</span>
 </pre></div>
 
 </div>
@@ -11973,12 +11974,12 @@ Com essa informação seria possível avaliar a necessidade de novos recursos e 
 
  Pasta de C:\Users\jonat\Dropbox\Jonathan\Programming\All_Projects\Jupyter _Notebook\My-Intro-To-Data-Science\Fourth_Week-Final_Project\ndfdsi-bikeshareanalysis
 
-20/09/2017  20:56    &lt;DIR&gt;          .
-20/09/2017  20:56    &lt;DIR&gt;          ..
+22/09/2017  01:40    &lt;DIR&gt;          .
+22/09/2017  01:40    &lt;DIR&gt;          ..
 20/07/2017  13:11             6.148 .DS_Store
-16/09/2017  18:27    &lt;DIR&gt;          .ipynb_checkpoints
-20/09/2017  20:54         3.210.595 201309_trip_data.csv
-20/09/2017  20:54         1.862.149 201309_trip_summary.csv
+20/09/2017  20:58    &lt;DIR&gt;          .ipynb_checkpoints
+22/09/2017  01:14         3.210.595 201309_trip_data.csv
+22/09/2017  01:14         1.862.149 201309_trip_summary.csv
 20/07/2017  13:11             2.792 201402_README.txt
 20/07/2017  13:11             5.203 201402_station_data.csv
 20/07/2017  13:11        17.219.022 201402_trip_data.csv
@@ -11992,16 +11993,18 @@ Com essa informação seria possível avaliar a necessidade de novos recursos e 
 20/07/2017  13:11        43.012.650 201508_trip_data.csv
 20/07/2017  13:11           158.638 201508_weather_data.csv
 20/09/2017  20:12           474.317 Analise_Bay_Area_Bike_Share-NDFDSI.html
-20/09/2017  20:56           207.173 Analise_Bay_Area_Bike_Share-NDFDSI.ipynb
+22/09/2017  01:40           254.140 Analise_Bay_Area_Bike_Share-NDFDSI.ipynb
 20/07/2017  13:11             2.896 babs_datacheck.py
 16/09/2017  15:16             2.471 babs_datacheck.pyc
 19/09/2017  15:24             6.731 babs_visualizations.py
 20/09/2017  10:05             5.321 babs_visualizations.pyc
-20/09/2017  20:54        45.949.771 babs_y1_y2_summary.csv
-20/09/2017  16:06           188.844 Necessary Skills.ipynb
+22/09/2017  01:15        45.949.771 babs_y1_y2_summary.csv
+21/09/2017  15:11               873 debug.log
+21/08/2017  13:37            38.675 Default-Analise_Bay_Area_Bike_Share-NDFDSI.ipynb
+21/09/2017  22:47            13.998 Necessary Skills.ipynb
 20/09/2017  19:42             3.239 README.md
-              24 arquivo(s)    133.142.729 bytes
-               3 pasta(s)   83.633.442.816 bytes disponíveis
+              26 arquivo(s)    133.054.398 bytes
+               3 pasta(s)   81.453.060.096 bytes disponíveis
 </pre>
 </div>
 </div>
@@ -12074,7 +12077,8 @@ Com essa informação seria possível avaliar a necessidade de novos recursos e 
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">sample_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;201309_trip_data.csv&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Comando para ler a planilha &#39;201309_trip_data.csv&#39;</span>
+<span class="n">sample_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;201309_trip_data.csv&#39;</span><span class="p">)</span>
 <span class="c1"># TODO: escreva o código para visualizar as primeiras linhas</span>
 </pre></div>
 
@@ -12085,10 +12089,11 @@ Com essa informação seria possível avaliar a necessidade de novos recursos e 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">sample_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Mostra o cabeçalho para a variável &quot;sample_data&quot;. Está variável foi definida no código acima para carregar a tabela CSV.</span>
+<span class="n">sample_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -12100,7 +12105,7 @@ Com essa informação seria possível avaliar a necessidade de novos recursos e 
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[5]:</div>
+<div class="prompt output_prompt">Out[63]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -12122,89 +12127,77 @@ Com essa informação seria possível avaliar a necessidade de novos recursos e 
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Trip ID</th>
-      <th>Duration</th>
-      <th>Start Date</th>
-      <th>Start Station</th>
-      <th>Start Terminal</th>
-      <th>End Date</th>
-      <th>End Station</th>
-      <th>End Terminal</th>
-      <th>Bike #</th>
-      <th>Subscription Type</th>
-      <th>Zip Code</th>
+      <th>duration</th>
+      <th>start_date</th>
+      <th>start_year</th>
+      <th>start_month</th>
+      <th>start_hour</th>
+      <th>weekday</th>
+      <th>start_city</th>
+      <th>end_city</th>
+      <th>subscription_type</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>4576</td>
-      <td>63</td>
-      <td>8/29/2013 14:13</td>
-      <td>South Van Ness at Market</td>
-      <td>66</td>
-      <td>8/29/2013 14:14</td>
-      <td>South Van Ness at Market</td>
-      <td>66</td>
-      <td>520</td>
+      <td>1.050000</td>
+      <td>29</td>
+      <td>2013</td>
+      <td>8</td>
+      <td>14</td>
+      <td>3</td>
+      <td>San Francisco</td>
+      <td>San Francisco</td>
       <td>Subscriber</td>
-      <td>94127</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>4607</td>
-      <td>70</td>
-      <td>8/29/2013 14:42</td>
-      <td>San Jose City Hall</td>
-      <td>10</td>
-      <td>8/29/2013 14:43</td>
-      <td>San Jose City Hall</td>
-      <td>10</td>
-      <td>661</td>
+      <td>1.166667</td>
+      <td>29</td>
+      <td>2013</td>
+      <td>8</td>
+      <td>14</td>
+      <td>3</td>
+      <td>San Jose</td>
+      <td>San Jose</td>
       <td>Subscriber</td>
-      <td>95138</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>4130</td>
-      <td>71</td>
-      <td>8/29/2013 10:16</td>
-      <td>Mountain View City Hall</td>
-      <td>27</td>
-      <td>8/29/2013 10:17</td>
-      <td>Mountain View City Hall</td>
-      <td>27</td>
-      <td>48</td>
+      <td>1.183333</td>
+      <td>29</td>
+      <td>2013</td>
+      <td>8</td>
+      <td>10</td>
+      <td>3</td>
+      <td>Mountain View</td>
+      <td>Mountain View</td>
       <td>Subscriber</td>
-      <td>97214</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>4251</td>
-      <td>77</td>
-      <td>8/29/2013 11:29</td>
-      <td>San Jose City Hall</td>
-      <td>10</td>
-      <td>8/29/2013 11:30</td>
-      <td>San Jose City Hall</td>
-      <td>10</td>
-      <td>26</td>
+      <td>1.283333</td>
+      <td>29</td>
+      <td>2013</td>
+      <td>8</td>
+      <td>11</td>
+      <td>3</td>
+      <td>San Jose</td>
+      <td>San Jose</td>
       <td>Subscriber</td>
-      <td>95060</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>4299</td>
-      <td>83</td>
-      <td>8/29/2013 12:02</td>
-      <td>South Van Ness at Market</td>
-      <td>66</td>
-      <td>8/29/2013 12:04</td>
-      <td>Market at 10th</td>
-      <td>67</td>
-      <td>319</td>
+      <td>1.383333</td>
+      <td>29</td>
+      <td>2013</td>
+      <td>8</td>
+      <td>12</td>
+      <td>3</td>
+      <td>San Francisco</td>
+      <td>San Francisco</td>
       <td>Subscriber</td>
-      <td>94103</td>
     </tr>
   </tbody>
 </table>
@@ -12230,11 +12223,13 @@ Com essa informação seria possível avaliar a necessidade de novos recursos e 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Mostra as primeiras linhas do arquivo de dados das estações</span>
+<span class="c1"># Criar leitor para o arquivo &#39;201402_station_data.csv&#39;</span>
 <span class="n">station_info</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;201402_station_data.csv&#39;</span><span class="p">)</span>
+<span class="c1"># Mostra apenas o cabeçalho da &#39;station_info&#39;</span>
 <span class="n">station_info</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
@@ -12247,7 +12242,7 @@ Com essa informação seria possível avaliar a necessidade de novos recursos e 
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[6]:</div>
+<div class="prompt output_prompt">Out[64]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -12385,10 +12380,11 @@ Com essa informação seria possível avaliar a necessidade de novos recursos e 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">teste</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;201402_station_data.csv&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Aponta para a tabela nos colchetes</span>
+<span class="n">teste</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;201402_station_data.csv&#39;</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -12401,7 +12397,8 @@ Com essa informação seria possível avaliar a necessidade de novos recursos e 
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">station_info</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Carrega tabela completa para conferir</span>
+<span class="n">station_info</span>
 </pre></div>
 
 </div>
@@ -13090,7 +13087,8 @@ Com essa informação seria possível avaliar a necessidade de novos recursos e 
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">organizando_dados</span><span class="p">(</span><span class="n">mapeamento</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Chama a função acima</span>
+<span class="n">organizando_dados</span><span class="p">(</span><span class="n">mapeamento</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -13851,7 +13849,7 @@ Com essa informação seria possível avaliar a necessidade de novos recursos e 
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># teste</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># teste feito para garantir resultado, tira a media do tempo de duracao das viagens</span>
 <span class="n">trip_data</span><span class="p">[</span><span class="s1">&#39;duration&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
 
@@ -13883,7 +13881,7 @@ Com essa informação seria possível avaliar a necessidade de novos recursos e 
 <div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># teste</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># teste resulta no mesmo dado acima, porem de outra forma!</span>
 <span class="n">trip_data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
 
@@ -13915,8 +13913,11 @@ Com essa informação seria possível avaliar a necessidade de novos recursos e 
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">tamanho</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">trip_data</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># coloca na variável &quot;tamanho&quot; o tamanho da tabela &quot;trip_data&quot;</span>
+<span class="n">tamanho</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">trip_data</span><span class="p">)</span>
+<span class="c1"># Acessa a coluna de duracao e tira a média dos valores</span>
 <span class="n">media_duracao</span> <span class="o">=</span> <span class="n">trip_data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="c1"># Acessa a coluna de duracao e tira a mediana dos valores</span>
 <span class="n">mediana_duracao</span> <span class="o">=</span> <span class="n">trip_data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
 </pre></div>
 
@@ -13927,10 +13928,12 @@ Com essa informação seria possível avaliar a necessidade de novos recursos e 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: preencha os campos com os dados de acordo com o print</span>
+<span class="c1"># Perceba que o valor {:d}, quando o código é rodada, imprime o valor definido nos parenteses após o &quot;.format&quot;</span>
+<span class="c1"># Nesse caso acessei as variaveis que fiz no bloco acima</span>
 <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Existem {:d} pontos no conjunto de dados&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">tamanho</span><span class="p">))</span>
 <span class="k">print</span><span class="p">(</span><span class="s1">&#39;A duração média das viagens foi de {:.2f} minutos&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">media_duracao</span><span class="p">))</span>
 <span class="k">print</span><span class="p">(</span><span class="s1">&#39;A mediana das durações das viagens foi de {:.2f} minutos&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mediana_duracao</span><span class="p">))</span>
@@ -13957,9 +13960,9 @@ Com essa informação seria possível avaliar a necessidade de novos recursos e 
 <pre>Existem 27345 pontos no conjunto de dados
 A duração média das viagens foi de 27.60 minutos
 A mediana das durações das viagens foi de 10.72 minutos
-25% das viagens foram mais curtas do que 6.82 minutos
-25% das viagens foram mais compridas do que 17.28 minutos
-Array: [  6.81666667  10.71666667  17.28333333]
+25% das viagens foram mais curtas do que 5.73 minutos
+25% das viagens foram mais compridas do que 12.58 minutos
+Array: [  5.73333333   8.61666667  12.58333333]
 </pre>
 </div>
 </div>
@@ -14037,9 +14040,11 @@ A mediana das durações das viagens foi de 10.72 minutos
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 
+<span class="c1"># Gerando gráfico e personalizando.</span>
 <span class="n">trip_subtype</span> <span class="o">=</span> <span class="n">trip_data</span><span class="p">[</span><span class="s1">&#39;subscription_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 <span class="n">trip_subtype</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;#111333&#39;</span><span class="p">,</span> <span class="s1">&#39;firebrick&#39;</span><span class="p">])</span>
 
+<span class="c1"># Esse bloco abiaxo imprime os parametros do grafico, tais como, Titulo, cores, nomenclatura dos eixos</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Viagens x Tipo de inscricao&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Tipo de inscricao&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Quantidade de viagens&#39;</span><span class="p">)</span>
@@ -14783,11 +14788,11 @@ AE8yVleUzadXAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># rode este comando abaixo caso esteja em dúvida quanto ao resultado esperado</span>
-<span class="c1">#usage_plot(trip_data, &#39;duration&#39;)</span>
+<span class="c1"># usage_plot(trip_data, &#39;duration&#39;)</span>
 </pre></div>
 
 </div>
@@ -14811,7 +14816,8 @@ AE8yVleUzadXAAAAAElFTkSuQmCC
 <div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">trip_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">trip_data</span><span class="p">[</span><span class="s1">&#39;duration&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Testando codigo para imprimir apenas durações menores que 10</span>
+<span class="n">trip_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">trip_data</span><span class="p">[</span><span class="s1">&#39;duration&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -15505,11 +15511,11 @@ AGBBBDwAABZEwAMAYEEEPAAAFvT/Cqo0dbpyAr8AAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># rode esta linha para verificar como deve ficar o seu gráfico</span>
-<span class="c1">#usage_plot(trip_data, &#39;duration&#39;, [&#39;duration &lt; 60&#39;], boundary = 0, bin_width = 5)</span>
+<span class="c1"># usage_plot(trip_data, &#39;duration&#39;, [&#39;duration &lt; 60&#39;], boundary = 0, bin_width = 5)</span>
 </pre></div>
 
 </div>
@@ -15544,7 +15550,8 @@ AGBBBDwAABZEwAMAYEEEPAAAFvT/Cqo0dbpyAr8AAAAASUVORK5CYII=
 <div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">trip_60</span> <span class="o">=</span> <span class="n">trip_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">trip_data</span><span class="p">[</span><span class="s1">&#39;duration&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="p">]</span> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Filtra duracoes menores que 60</span>
+<span class="n">trip_60</span> <span class="o">=</span> <span class="n">trip_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">trip_data</span><span class="p">[</span><span class="s1">&#39;duration&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="p">]</span> 
 </pre></div>
 
 </div>
@@ -15679,7 +15686,7 @@ AGBBBDwAABZEwAMAYEEEPAAAFvT/Cqo0dbpyAr8AAAAASUVORK5CYII=
 <div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Itens na lista de cidades</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># MOstra itens na lista de cidades</span>
 <span class="n">tipo_de_itens</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">trip_60</span><span class="p">[</span><span class="s1">&#39;start_city&#39;</span><span class="p">])</span>
 </pre></div>
 
@@ -15736,34 +15743,356 @@ AGBBBDwAABZEwAMAYEEEPAAAFvT/Cqo0dbpyAr8AAAAASUVORK5CYII=
 <div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">trip_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
 
-<span class="n">dados</span> <span class="o">=</span> <span class="n">trip_data</span><span class="p">[</span><span class="s1">&#39;start_city&#39;</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Existem {} viagens.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dados</span><span class="o">.</span><span class="n">count</span><span class="p">()))</span>
-<span class="n">cidades_inicio</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">city</span> <span class="ow">in</span> <span class="n">dados</span><span class="p">:</span>
-    <span class="n">cidades_inicio</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">city</span><span class="p">)</span>
+</div>
+</div>
+</div>
 
-<span class="n">counts</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">cidades_inicio</span><span class="p">)</span>
-<span class="n">counts_values</span> <span class="o">=</span> <span class="n">counts</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+<div class="output_wrapper">
+<div class="output">
 
-<span class="n">lista</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">counts_values</span><span class="p">:</span>
-    <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
 
-<span class="n">lista_ordenada</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
-<span class="n">index_num</span> <span class="o">=</span> <span class="n">lista_ordenada</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="k">for</span> <span class="n">cada</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">counts</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="k">if</span> <span class="n">v</span> <span class="o">==</span> <span class="n">index_num</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;{} aparece {} como ponto final.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cada</span><span class="p">,</span> <span class="n">index_num</span><span class="p">))</span>
+<div class="output_area">
+<div class="prompt output_prompt">Out[39]:</div>
 
-<span class="n">dados_trip</span> <span class="o">=</span> <span class="n">trip_data</span><span class="p">[</span><span class="s1">&#39;duration&#39;</span><span class="p">]</span>
-<span class="n">duration_range__de_5_ate_10</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">cada_duration</span> <span class="ow">in</span> <span class="n">dados_trip</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">cada_duration</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="ow">and</span> <span class="n">cada_duration</span> <span class="o">&gt;=</span> <span class="mi">5</span><span class="p">:</span>
-        <span class="n">duration_range__de_5_ate_10</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cada_duration</span><span class="p">)</span>
-    
-<span class="k">print</span><span class="p">(</span><span class="s2">&quot;A maioria das viagens durou entre {} viagens para essa duracao&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">duration_range__de_5_ate_10</span><span class="p">)))</span>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>duration</th>
+      <th>start_date</th>
+      <th>start_year</th>
+      <th>start_month</th>
+      <th>start_hour</th>
+      <th>weekday</th>
+      <th>start_city</th>
+      <th>end_city</th>
+      <th>subscription_type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1.050000</td>
+      <td>29</td>
+      <td>2013</td>
+      <td>8</td>
+      <td>14</td>
+      <td>3</td>
+      <td>San Francisco</td>
+      <td>San Francisco</td>
+      <td>Subscriber</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1.166667</td>
+      <td>29</td>
+      <td>2013</td>
+      <td>8</td>
+      <td>14</td>
+      <td>3</td>
+      <td>San Jose</td>
+      <td>San Jose</td>
+      <td>Subscriber</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1.183333</td>
+      <td>29</td>
+      <td>2013</td>
+      <td>8</td>
+      <td>10</td>
+      <td>3</td>
+      <td>Mountain View</td>
+      <td>Mountain View</td>
+      <td>Subscriber</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1.283333</td>
+      <td>29</td>
+      <td>2013</td>
+      <td>8</td>
+      <td>11</td>
+      <td>3</td>
+      <td>San Jose</td>
+      <td>San Jose</td>
+      <td>Subscriber</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1.383333</td>
+      <td>29</td>
+      <td>2013</td>
+      <td>8</td>
+      <td>12</td>
+      <td>3</td>
+      <td>San Francisco</td>
+      <td>San Francisco</td>
+      <td>Subscriber</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Cria o range necessário filtrando a coluna &quot;duration&quot;</span>
+<span class="n">between</span> <span class="o">=</span> <span class="p">(</span><span class="n">trip_data</span><span class="o">.</span><span class="n">duration</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">trip_data</span><span class="o">.</span><span class="n">duration</span> <span class="o">&gt;=</span> <span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Cria tabela filtrada pela condição definida na variável &quot;between&quot;</span>
+<span class="n">filter_values</span> <span class="o">=</span> <span class="n">trip_data</span><span class="p">[</span><span class="n">between</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Cabeçalho da tabela Filtrada </span>
+<span class="n">filter_values</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[42]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>duration</th>
+      <th>start_date</th>
+      <th>start_year</th>
+      <th>start_month</th>
+      <th>start_hour</th>
+      <th>weekday</th>
+      <th>start_city</th>
+      <th>end_city</th>
+      <th>subscription_type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>100</th>
+      <td>5.083333</td>
+      <td>29</td>
+      <td>2013</td>
+      <td>8</td>
+      <td>17</td>
+      <td>3</td>
+      <td>San Francisco</td>
+      <td>San Francisco</td>
+      <td>Subscriber</td>
+    </tr>
+    <tr>
+      <th>101</th>
+      <td>5.116667</td>
+      <td>29</td>
+      <td>2013</td>
+      <td>8</td>
+      <td>12</td>
+      <td>3</td>
+      <td>Palo Alto</td>
+      <td>Palo Alto</td>
+      <td>Subscriber</td>
+    </tr>
+    <tr>
+      <th>102</th>
+      <td>5.150000</td>
+      <td>29</td>
+      <td>2013</td>
+      <td>8</td>
+      <td>11</td>
+      <td>3</td>
+      <td>San Francisco</td>
+      <td>San Francisco</td>
+      <td>Subscriber</td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td>5.150000</td>
+      <td>29</td>
+      <td>2013</td>
+      <td>8</td>
+      <td>11</td>
+      <td>3</td>
+      <td>San Francisco</td>
+      <td>San Francisco</td>
+      <td>Customer</td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td>5.150000</td>
+      <td>29</td>
+      <td>2013</td>
+      <td>8</td>
+      <td>18</td>
+      <td>3</td>
+      <td>San Francisco</td>
+      <td>San Francisco</td>
+      <td>Customer</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">estratificando_maior</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">filter_values</span><span class="p">[</span><span class="s1">&#39;start_city&#39;</span><span class="p">])</span>
+<span class="n">estratificando_maior</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[43]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>San Francisco    8129
+San Jose          675
+Mountain View     105
+Redwood City       66
+Palo Alto          50
+Name: start_city, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">estratificando_menor</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">filter_values</span><span class="p">[</span><span class="s1">&#39;end_city&#39;</span><span class="p">])</span>
+<span class="n">estratificando_menor</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[44]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>San Francisco    8129
+San Jose          675
+Mountain View     105
+Redwood City       66
+Palo Alto          50
+Name: end_city, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;Tivemos {:d} viagens entre 5 e 10 minutos.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">filter_values</span><span class="p">)))</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;A cidade de origem com maior número de viagens foi &#39;</span> <span class="o">+</span> <span class="n">estratificando_maior</span><span class="o">.</span><span class="n">argmax</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;A cidade de destino com maior número de viagens foi &#39;</span> <span class="o">+</span> <span class="n">estratificando_menor</span><span class="o">.</span><span class="n">argmax</span><span class="p">())</span>
 </pre></div>
 
 </div>
@@ -15778,11 +16107,578 @@ AGBBBDwAABZEwAMAYEEEPAAAFvT/Cqo0dbpyAr8AAAAASUVORK5CYII=
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Existem 27345 viagens.
-San Francisco aparece 24508 como ponto final.
-A maioria das viagens durou entre 9003 viagens para essa duracao
+<pre>Tivemos 9025 viagens entre 5 e 10 minutos.
+A cidade de origem com maior número de viagens foi San Francisco
+A cidade de destino com maior número de viagens foi San Francisco
 </pre>
 </div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Cidade origem maior número de viagens</span>
+<span class="n">filter_values</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;start_city&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;Análise entre cidades de origem&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[46]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xe3eaa90&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAiMAAAFXCAYAAABwcU77AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+AAALEgAACxIB0t1+/AAAIABJREFUeJzt3XdgTnf///HXlQRBYrURVaNEjdpaJaU2RUVbNWpEldrj
+thMjdoja6w5605JqzFDVQVsttcdNqQ6jqBES5EYSsq7P74/+XN87d9BoxckVz8dfrvM553Pe7xPj
+5XPOdV02Y4wRAACARVysLgAAADzeCCMAAMBShBEAAGApwggAALAUYQQAAFiKMAIAACxFGAGcRFJS
+kmrXrq1u3bo90HHHjh1T9erVdfHiRce2MmXK6Nq1a/rmm280adKkh13qA+natauuXbuWIXOPGjVK
+u3btSrP96NGjatCgwQPPV7VqVZ0/f/5hlPZQ6kmve10HILNws7oAAOnz1VdfqUyZMjp27JhOnTol
+Hx+fdB337bffavz48SpcuHCasYYNG6phw4YPu9QHsnPnzgybOzg4OMPmdiZcB2R2hBHASYSHh6t5
+8+YqXry4li1bpgkTJmjv3r2aNWuWihYtqhMnTigxMVFjxoxRzZo1dfr0aU2YMEHx8fFat26dPv30
+U82ePVs5cuRwzBkREaHNmzdr0aJF2rJli0JDQ2Wz2eTq6qrhw4erevXqunnzpoKDg3X8+HElJSXJ
+19dXw4cPl5tb6r8+EhMTNX36dO3fv18pKSl67rnnNHr0aHl4eKhBgwZ64403tHv3bkVGRqpZs2Ya
+Pny4RowYIUl6++23tXjxYnXs2FGVKlXSr7/+qsGDB6tSpUqaMGGCIiMjlZSUpFdffVW9evVKc22i
+o6M1duxY/fbbb3JxcdFbb72lzp07y9/fXx07dlTTpk318ccfa9myZfLw8FDp0qUdx165ckVjxozR
+1atXFR0draefflqzZ8/WE088oQMHDmjixImy2WyqWLGi7Ha747itW7cqNDRUSUlJcnd3V0BAgKpW
+rapTp05p1KhRSkxMlDFGrVu3VseOHdPUfK96JCk0NFRbtmyR3W7X008/rbFjx8rb2zvNHAsWLNBn
+n30mV1dXlShRQkFBQfLy8pK/v7/y5s2r3377Te3bt9eWLVsc1yEiIkKLFy+Wu7u7atasqeXLl+un
+n36673n9/f1Vvnx57dmzR1evXlXnzp119epV7du3T7du3dLs2bNVpkyZ9Pw2Bu7OAMj0Tpw4YSpU
+qGBiYmLMDz/8YCpVqmSuXbtm9uzZY8qVK2d++uknY4wxS5YsMR07djTGGBMSEmI2bNhgjDEmMTHR
+tGjRwnz55ZfGGGNKly5trl69atatW2d69OhhjDGmYcOG5tChQ8YYY77//nszb948Y4wxgYGBZvny
+5cYYY5KTk83QoUPN4sWL09Q4b948ExISYux2uzHGmBkzZpixY8caY4ypX7++CQkJMcYYc+nSJVOx
+YkXz+++/p6rlzn7z5893zOnv72+++eYbY4wxt2/fNv7+/uazzz5Lc+6+ffuaqVOnGmOMuXHjhnn1
+1VfNmTNnTKdOncwXX3xhfvrpJ+Pr62uioqKMMcYEBQWZ+vXrG2OM+fDDD82iRYuMMcbY7Xbz7rvv
+miVLlpiEhATz0ksvmV27dhljjPn0009N6dKlzblz58zp06dNixYtzLVr14wxxhw/ftzUqlXLxMXF
+mREjRjjmi4qKMgMHDjQpKSmp6r1fPevXrzcDBw40SUlJxhhjVq5cad599900Pa9du9a0a9fOxMXF
+GWOMmTt3runatasxxphOnTqZESNGOPa9cx1OnDhhfH19TWRkpONnVrp06T89b6dOnUy/fv2MMcYc
+PnzYlC5d2vFzCQ4ONqNHj05TH/AgWBkBnEB4eLjq1aunfPnyKV++fCpSpIhWrVqlqlWrqnDhwipX
+rpwk6bnnntP69eslScOGDdPOnTv1/vvv68yZM4qKilJ8fPw9z/Hqq6+qX79+qlu3rmrVqqXu3btL
+kr777jsdPXpUa9eulSTdvn37rsd/9913unnzpuPZhKSkJD3xxBOO8Tu3g7y9vfXEE0/o+vXrKlq0
+aJp5XnjhBUlSfHy89u/fr+vXr2vOnDmObb/88ouaN2+e6phdu3Zp2LBhkiRPT09t2rQp1fju3btV
+q1YteXl5SZLatWunHTt2SPpjVebAgQP64IMPdObMGZ04cUKVK1fW8ePH5ebmJl9fX0lSixYtNGbM
+GEl/3FqKiopSly5dHOew2Wz6/fff1bhxYwUEBOjIkSPy9fXV6NGj5eLiku56vv32Wx09elRvvvmm
+JMlut+vWrVtprtP27dvVqlUr5cqVS5LUuXNnLVy4UImJiamu43/bsWOHatWqpUKFCkmSOnXqpHnz
+5qXrvI0bN5Ykx8/s5ZdfliQVK1ZM+/btS3Mu4EEQRoBMLj4+Xhs2bFCOHDkcDznGxsZqxYoVqlix
+otzd3R372mw2mf//dVODBw9WSkqKmjVrpnr16ikyMtIxdjeDBg1S69attWPHDsdSfkREhOx2u+bM
+meN4RuXGjRuy2Wxpjrfb7Ro5cqTq1q0rSYqLi1NCQoJj/L9vD/13nf/rzj+udrtdxhitXLlSOXPm
+lCRdu3Yt1Tx3uLm5parp3Llzyp8//z3P5+rq6vj1tGnTdOTIEb355puqUaOGkpOTZYy5a413bk3Z
+7Xb5+vpq9uzZjrHIyEgVLFhQZcuW1ebNm7Vr1y7t3r1bCxYs0MqVK1WsWLF01WO32/Xuu++qQ4cO
+kv64/XX9+vU0Pf9vbXa7XcnJyWmu439zdXX9y+fNnj17qrmyZcuWZn7gr+LdNEAm9+mnnyp//vz6
+/vvvtXXrVm3dulVff/214uPjdfXq1Xset2PHDvXt21fNmzeXzWbTDz/8oJSUlLvum5ycrAYNGig+
+Pl7t27fX2LFjderUKSUnJ6t27dr68MMPZYxRYmKievfurY8++ijNHLVr19aKFSuUmJgou92uoKAg
+zZw580/7c3V1TfWP6B0eHh6qUqWKPvjgA0l/hKD27dvrm2++SbOvr6+v1q1bJ0m6efOm3n77bZ05
+c8Yx/tJLL2nnzp26dOmSJDlWj+5cp7fffluvv/66nnjiCe3atUspKSkqXbq0jDHatm2bJOmbb75x
+/ONcs2ZN7dy5U6dOnZIkbdu2TS1btlRCQoKGDBmizz//XK+++qrGjh0rDw8PRUZGpqr3fvXUrl1b
+a9euVWxsrCRpzpw5Gj58eJqea9eurYiICMdqV1hYmKpXr54mNPzvMbt379bly5clSWvWrHng8wIZ
+gZURIJMLDw/XO++8k+p/sXny5JG/v7+WLVt2z+MGDRqkvn37Km/evMqZM6eqV6+u33///a77urm5
+aeTIkRo6dKhjlWHy5MnKnj27Ro0apeDgYPn5+SkpKUkvvfSS3n333TRz9OnTR1OnTtUbb7yhlJQU
+lStXToGBgX/aX+PGjdWhQwf985//TDM2ffp0TZw4UX5+fkpMTFSLFi3UsmXLNPuNGTNG48aNk5+f
+n4wx6tmzpypUqOAYL1OmjIYNG6a3335buXPnVqVKlRxjffv21Xvvvad//vOfcnV1VbVq1fT7778r
+W7ZsWrBggcaNG6eZM2eqXLlyjttOzz77rCZMmKDBgwfLGCM3NzeFhoYqV65c6tOnj0aNGqVVq1bJ
+1dVVjRo10osvvpiq3vvV06ZNG12+fFlt27aVzWbTU089pZCQkDQ9t27dWpGRkWrTpo3sdruKFy+u
+6dOn3/dalyhRQiNGjFC3bt2UPXt2lStXzrHqlN7zAhnBZu63bgsAyDLOnTunTz75RH369JGLi4u2
+bNmi999/P9UKCWAFVkYA4DFRqFAhRUVFyc/PT66urvL09NTkyZOtLgtgZQQAAFiLB1gBAIClCCMA
+AMBShBEAAGApHmC1SHJyimJi7v1pmM4of/5cWaon+sncslo/UtbriX4yv0fdk5eX5123szJiETc3
+1z/fyclktZ7oJ3PLav1IWa8n+sn8MktPhBEAAGApwggAALAUYQQAAFiKMAIAACxFGAEAAJYijAAA
+AEsRRgAAgKUIIwAAwFKEEQAAYCnCCAAAsBRhBAAAWIowAgAALEUYAQAAlnKzuoDHld+QT6wuIZWl
+gQ2sLgEA8JhiZQQAAFiKMAIAACxFGAEAAJYijAAAAEsRRgAAgKUIIwAAwFKEEQAAYCnCCAAAsBRh
+BAAAWIowAgAALEUYAQAAlnLaMLJ48WJ16dJFnTp1kr+/v3788ceHMu/58+fVtm3bhzIXAAD4c075
+RXknT57U1q1bFR4eLpvNpp9//lkBAQHauHGj1aUBAIAH5JRhxNPTUxcvXtTatWtVp04dlStXTmvX
+rpUk7du3T/Pnz5cxRnFxcZoxY4ayZcumIUOGqFChQjp37pwqVqyo8ePH/+l5du7cqdmzZytHjhzK
+ly+fJk+erOTkZA0cOFDGGCUkJGj8+PEqV66cwsLCtGnTJtlsNjVv3lydO3fO6MsAAECW4JRhxNvb
+W6Ghofroo4+0YMECubu7a9CgQXrllVd04sQJTZs2Td7e3lq4cKG+/PJL+fn56cyZM1qyZIly5syp
+Ro0aKTo6Wl5eXvc8hzFGQUFBCg8Pl7e3t5YtW6bQ0FDVqFFD+fLl03vvvaeTJ08qPj5eJ0+e1Oef
+f66PP/5YkvTOO++odu3aKlmy5KO6JH+bl5dnppons6CfzC2r9SNlvZ7oJ/PLDD05ZRg5e/asPDw8
+NGXKFEnS0aNH1b17d9WoUUPe3t4KDg5Wrly5dPnyZVWrVk2SVKxYMXl4eEiSvLy8lJCQkGrO69ev
+K2/evJIkm82mmJgYeXh4yNvbW5JUvXp1zZw5U8OGDdOZM2fUp08fubm5qXfv3jp+/LguXryoLl26
+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
+NdOBAwc0efJk5cmTR66urqpSpYomT56satWqqWnTpurWrZtq166td955R6NHj1arVq1069YtzZ49
+Wzly5FC+fPkcx4eEhOjgwYOSpBYtWujtt9/WqVOnNHLkSOXMmVM5c+Z01HLHwYMHVahQIVWuXNmx
+bdiwYbLb7Tp//rwGDx6sMWPG6Pvvv9exY8d07do1bd26VXPnzpUkvfXWW5ozZ468vb0f0VUFAMA5
+PbIwsmfPHvn7++vq1atycXFR27Zt5evrq23btun8+fMKDw9XQkKC2rZtq1q1amn8+PGaO3euSpQo
+obFjx0qSGjdurPXr16tevXq6ceOGdu/erS5duujYsWOaOHGiGjZsqPDwcHl7e2vZsmUKDQ3Viy++
+qPPnz2v16tVKTk5Whw4dVLNmTc2cOVMDBgxQrVq1tHjxYv3222+p6o2KilLRokVTbcuRI0eq1xUq
+VNDLL7+s5s2b6+WXX9bChQt1/fp1RUVFKX/+/A8URLy8PP/ilc1cskofd9BP5pbV+pGyXk/0k/ll
+hp4eWRipWbOmZs2apZiYGHXt2lVFihSRJB0/flzHjh2Tv7+/pD++EfjChQu6cuWKSpQoIUmqVq2a
+fv/9dz3//PMKDg7W3r171aRJE23evFkHDhxQlSpVFBMTIw8PD0cAqF69umbOnKknnnhCL7zwgmw2
+m7Jly6bKlSvr1KlTOnPmjCpVquSY/3/DSOHChbVly5ZU22JiYnTo0CGVLl06TX82m00tW7bUpk2b
+dP78ebVu3fqBrk909M0H2j8z8vLyzBJ93EE/mVtW60fKej3RT+b3qHu6V/D528+MGGMeaP/8+fNr
+2rRpGj16tKKiolSyZEnVqFFDYWFhWrZsmZo1a6aiRYvK29tbp06dkiQdPXr0j2JdXFShQgX961//
+Uu3atfX8889r2rRpatKkifLnz6/Y2FjH8xv79u3TM888Ix8fH8ctmqSkJB06dEjFixeXj4+PDh06
+JOnuz71UqVJF58+f15EjRxx9zp8/XwcOHEi1n81mc1yDN998U19++aX279+f6nNZAADAvaVrZeTE
+iRN69tlnU207fPiwqlSpopdeeumBT1qqVCn5+/tr0qRJmjNnjvbt26cOHTooPj5ejRo1koeHhyZM
+mKDhw4fLw8NDuXPndjzT0bhxY40YMUJly5ZV7dq1tWHDBlWvXl02m02TJk1S//79ZbPZlDdvXk2Z
+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
+vviiU/cTERGh9evXS5ISEhL0888/6+OPP9bkyZOdsqekpCQFBgbqwoULcnFx0cSJEzP/nyODR2rz
+5s0mICDAGGPMoUOHTK9evSyu6P4WL15sWrRoYdq0aWOMMaZnz55mz549xhhjgoKCzJYtW0xUVJRp
+0aKFSUhIMDdu3HD8eunSpWbu3LnGGGM2bdpkJk6caFkfd6xdu9ZMmjTJGGNMTEyMqVu3rlP39NVX
+X5nAwEBjjDF79uwxvXr1cup+jDEmMTHR9OnTxzRp0sScPHnS6fu5ffu2ee2111Jtc+ae9uzZY3r2
+7GlSUlJMbGysmTt3rlP387/GjRtnVq5c6dQ9ffXVV2bAgAHGGGN27Nhh+vXrl+n74TbNI3bw4EG9
+/PLLkqQqVaroxx9/tLii+ytWrJjmzZvneH3s2DG9+OKLkqQ6depo165dOnLkiKpWrars2bPL09NT
+xYoV0y+//JKq1zp16mj37t2W9PDfmjZtqn/84x+SJGOMXF1dnbqnRo0aaeLEiZKkixcvKk+ePE7d
+jyRNnTpVb731lgoWLCjJ+X/P/fLLL7p165a6du2qzp076/Dhw07d044dO1S6dGn17dtXvXr1Ur16
+9Zy6n/929OhRnTx5Uu3atXPqnkqUKKGUlBTZ7XbFxsbKzc0t0/fDbZpHLDY21rFcK0murq5KTk6W
+m1vm/FG88sorOn/+vOO1MUY2m02SlDt3bt28eVOxsbHy9PR07JM7d27Fxsam2n5nX6vlzp1b0h8/
+hwEDBmjgwIGaOnWqU/fk5uamgIAAffXVV5o7d6527tzptP1ERESoQIECevnll7V48WJJzv97zt3d
+Xd26dVObNm105swZde/e3al7iomJ0cWLF7Vw4UKdP39evXv3dup+/tuiRYvUt29fSc79+y5Xrly6
+cOGCmjVrppiYGC1cuFD79+/P1P1kzn8BszAPDw/FxcU5Xtvt9kwbRO7GxeX/FtPi4uKUJ0+eND3F
+xcXJ09Mz1fY7+2YGkZGR6tu3rzp06CA/Pz9NmzbNMeasPU2dOlVDhw5V27ZtlZCQ4NjubP2sW7dO
+NptNu3fv1s8//6yAgABdu3bNMe5s/Uh//C+1ePHistlsKlGihPLly6djx445xp2tp3z58qlkyZLK
+nj27SpYsqRw5cujSpUuOcWfr544bN27o9OnTqlmzpiTn/rvuww8/VO3atTVkyBBFRkbq7bffVlJS
+kmM8M/bDbZpHrFq1atq+fbsk6fDhwypdurTFFT2Y5557Tnv37pUkbd++XS+88IIqVaqkgwcPKiEh
+QTdv3tSpU6dUunRpVatWTdu2bXPs+/zzz1tZuiTpypUr6tq1q4YNG6bWrVtLcu6eNmzYoEWLFkmS
+cubMKZvNpgoVKjhtPytWrNBHH32ksLAwlStXTlOnTlWdOnWcth9JWrt2rUJCQiRJly9fVmxsrGrV
+quW0PT3//PP6/vvvZYzR5cuXdevWLfn6+jptP3fs379fvr6+jtfO/PdCnjx5HCsbefPmVXJycqbv
+hy/Ke8TuvJvm+PHjMsZo8uTJ8vHxsbqs+zp//rwGDx6s1atX6/Tp0woKClJSUpJKliypSZMmydXV
+VatXr9aqVatkjFHPnj31yiuv6NatWwoICFB0dLSyZcumGTNmyMvLy9JeJk2apC+++EIlS5Z0bBs1
+apQmTZrklD3Fx8drxIgRunLlipKTk9W9e3f5+Pg49c/oDn9/f40bN04uLi5O3U9iYqJGjBihixcv
+ymazaejQocqfP79T9/Tee+9p7969MsZo0KBBKlKkiFP3I0n/+te/5Obmpi5dukiSU/9dFxcXp5Ej
+Ryo6OlpJSUnq3LmzKlSokKn7IYwAAABLcZsGAABYijACAAAsRRgBAACWIowAAABLEUYAAIClCCMA
+AMBShBEAAGApwggAALDU/wPzdrQuzk7DyAAAAABJRU5ErkJggg==
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Destino origem maior número de viagens</span>
+<span class="n">filter_values</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;end_city&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;Análise entre cidades de destino&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[56]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x13463438&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+Bg0aqEGDBs7+7uXWc1e5cmXZ7XYlJiZq9+7datu2rXLnzi1J6tatmxYtWiS73S53d/c/nRP4X4QR
+IBNLTEzUhg0b5OHh4XyRY3x8vFatWqWqVasqZ86czn1tNpvM/33V1JtvvqnU1FS1aNFCDRs2VHR0
+tHPsToYMGaJ27dppz549ioiI0JIlSxQRESGHw6G3337b+RqVa9euyWaz3Xa8w+HQqFGj9Mwzz0iS
+EhISlJSU5Bz/79tD/13n/7r1j5vD4ZAxRmvWrFGuXLkkSVeuXEkzzy1ubm5pajp79qwKFChw1/O5
+uro6/zxz5kx99913eumll1S7dm2lpKTIGHPHGm/dmnI4HPLz89Nbb73lHIuOjlbhwoVVsWJFbd26
+Vfv27dP+/fu1cOFCrVmzRiVKlEhXPQ6HQ6+++qq6dOki6Y/bX1evXr3jtfpv/zvHnZ4zFxcXrVy5
+UpGRkdq/f7+mTJmi2rVra8yYMfec+9Y1v3WNjTG3XRuHw6GUlJQ/rRO4G95NA2Rin3zyiQoUKKAv
+v/xSO3fu1M6dO/X5558rMTFRly9fvutxe/bs0cCBA9WyZUvZbDZ9++23Sk1NveO+KSkpaty4sRIT
+E9W5c2eNGzdOUVFRSklJUb169bR8+XIZY2S329W/f3+tXLnytjnq1aunVatWyW63y+FwKDg4WHPm
+zPnT/lxdXe/4j5inp6dq1Kih9957T9If/6B27txZO3bsuG1fPz8/rV+/XtIfr5fo3r27zpw54xx/
++umntXfvXl24cEGSnKtHt65T9+7d9eKLL6pQoULat2+fUlNTVb58eRljtGvXLknSjh07nKGgTp06
+2rt3r6KioiRJu3btUuvWrZWUlKShQ4dq8+bNev755zVu3Dh5enoqOjo6Tb33qqdevXpat26d4uPj
+Jf3xzpYRI0bc1nP9+vW1YcMGJSUlKSkpSZs3b04zx52es+PHj6tVq1YqU6aM+vbtqx49ejhXU+72
+PNxNvXr1FBER4VxtCwsLk6+vL6si+NtYGQEysfDwcL3yyitp/uebN29eBQQEaMWKFXc9bsiQIRo4
+cKDy5cunXLlyydfXV7/++usd93Vzc9OoUaM0bNgw5yrDlClT5O7urtGjRyskJET+/v5KTk7W008/
+rVdfffW2OQYMGKDp06erTZs2Sk1NVaVKldL1VtNnn31WXbp00TvvvHPb2KxZszRp0iT5+/vLbrer
+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
+5pdZbtNk+bf2AgCArI0wAgAALEUYAQAAliKMAAAASxFGAACApQgjAADAUoQRAABgKcIIAACwFGEE
+AABYijACAAAslW2/myaz+2T2C9nuY4UBAPg7WBkBAACWIowAAABLEUYAAIClCCMAAMBShBEAAGAp
+wggAALAUYQQAAFiKMAIAACxFGAEAAJYijAAAAEsRRgAAgKUIIwAAwFKEEQAAYCnCCAAAsBRhBAAA
+WIowAgAALEUYAQAAliKMAAAASxFGAACApQgjAADAUoQRAABgKcIIAACwFGEEAABYijACAAAsRRgB
+AACWIowAAABLEUYAAIClCCMAAMBShBEAAGApN6sLeFj5D/34jtuXBTV+wJUAAGAtVkYAAIClCCMA
+AMBShBEAAGApwggAALAUYQQAAFiKMAIAACxFGAEAAJYijAAAAEsRRgAAgKUIIwAAwFKEEQAAYKkM
+CSMHDx5UhQoV9Omnn6bZ7u/vr6CgoPt2nrVr1yo5Ofmu40uWLNF33333p/OsX79eI0aMSLPthx9+
+UOfOnbV7926tXbv2H9cKAADuLMNWRkqXLp0mjJw4cUI3bty4r+dYvHixHA7HXcf79OmjatWq/ek8
+LVq00P79+5WYmOjctn79enXs2FENGjRQx44d70u9AADgdhkWRipWrKjz58/r+vXrkqSNGzfK39/f
+Ob5x40a99NJL6ty5s0aOHKnk5GRFRERo1qxZkqSkpCQ1bvzHN9gGBAQoJCREPXr0ULt27fTbb7/p
+ww8/VGxsrIYMGaLU1FSNHj1avXr1kr+/v+bOnStJCgoK0u7duxUREaE33nhDffv2VYsWLRQREZGm
+1ty5c6tx48batm2bJMlut2v37t1q3rx5mprCwsLUsWNHderUSe+//77i4uL0wgsvSJK++eYb+fr6
+yuFw6MKFC+rVq1dGXVoAALIVt4ycvFmzZtq2bZvatm2r7777Tr1791Z0dLTi4uI0f/58ffTRR/L0
+9NSUKVO0du1a5c6d+65zVatWTaNHj9bcuXP16aefqk+fPgoNDdXcuXMVHR2tGjVqqH379kpKSlKD
+Bg00ZMiQNMfHx8dr6dKlOnPmjPr166e2bdumGe/QoYNmzZqlF198UZ9//rmeeeYZ5cyZ0zl++vRp
+bd68WatXr5YkvfLKK6pXr57y58+v6Oho7d69W0WKFNH333+vyMhINW3a9G9dM29vr791XGaR1ev/
+X/STuWW3fqTs1xP9ZH6ZoacMDSP+/v4aP368ihcvrlq1ajm3nz17VmXLlpWnp6ckydfXV3v27FH1
+6tWd+xhj0sz1+OOPS5IeffRRXbp0Kc1Y/vz5FRkZqQMHDsjT01N2u/22WipWrChJKlKkyB3HK1eu
+rOvXr+vixYuKiIhQYGBgmvGTJ0/q/Pnz6tGjhyTp6tWr+uWXX/Tss89q165dOnr0qPr06aO9e/fq
+6NGjmjJlSnovUxqxsdf/1nGZgbe3V5au/3/RT+aW3fqRsl9P9JP5Peie7hZ8MvTdNMWLF1diYqLC
+wsLUunVr5/ZixYopKirK+RqNQ4cOqVSpUvLw8FBsbKwk6dixY386v81mk8PhUEREhLy8vDR79mz1
+7NlTN2/evC3M2Gy2P53vpZdeUlhYmG7evKly5cqlGStdurTKli2r999/X2FhYWrbtq0qVKigpk2b
+atOmTfL09FT9+vX1+eefy26365FHHvnT8wEAgAxeGZGkli1b6uOPP1apUqV09uxZSVLBggU1aNAg
+devWTS4uLipRooSGDRumpKQkhYeHq3PnzqpcubLy5Mlzz7lr1aqlPn36aOzYsRo6dKi++eYbubu7
+q2TJkoqJifnLtfr7+6thw4YaPXr0bWMVK1aUn5+fOnfuLLvdrmrVqsnHx0eurq5KSkpSnTp1lC9f
+Prm5ualhw4Z/+dwAADysbOZ/lxDwQPgP/fiO25cFNX7Aldw/2W0Jk34yt+zWj5T9eqKfzO+huE0D
+AADwZwgjAADAUoQRAABgKcIIAACwFGEEAABYijACAAAsRRgBAACWIowAAABLEUYAAIClCCMAAMBS
+Gf7dNLizT2a/kO0+VhgAgL+DlREAAGApwggAALAUYQQAAFiKMAIAACxFGAEAAJYijAAAAEsRRgAA
+gKUIIwAAwFKEEQAAYCnCCAAAsBRhBAAAWIowAgAALEUYAQAAliKMAAAAS9mMMcbqIgAAwMOLlREA
+AGApwggAALAUYQQAAFiKMAIAACxFGAEAAJYijAAAAEu5WV3Aw8bhcGj8+PE6ceKE3N3dNXnyZJUs
+WdLqsu7p22+/1axZsxQWFqZffvlFQUFBstlsKleunMaNGycXFxd98MEHWrNmjdzc3NS/f381atRI
+N2/e1PDhw3X58mXlyZNH06dPV8GCBS3tJTk5WaNGjdJvv/0mu92u/v37q2zZslm2p9TUVI0ZM0Y/
+//yzbDabJkyYIA8Pjyzbzy2XL19W27ZttWzZMrm5uWX5ftq0aSNPT09JUrFixdSvX78s3dPixYu1
+c+dOJScnq3PnznrqqaeydD8RERH66KOPJElJSUn68ccftXr1ak2ZMiVL9pScnKygoCD99ttvcnFx
+0aRJkzL/3yODB2rr1q0mMDDQGGPM0aNHTb9+/Syu6N6WLFliWrVqZdq3b2+MMaZv377mwIEDxhhj
+goODzbZt20xMTIxp1aqVSUpKMteuXXP+edmyZWbevHnGGGM2bdpkJk2aZFkft6xbt85MnjzZGGNM
+XFyceeaZZ7J0T9u3bzdBQUHGGGMOHDhg+vXrl6X7McYYu91uBgwYYJo1a2ZOnz6d5fu5efOmeeGF
+F9Jsy8o9HThwwPTt29ekpqaa+Ph4M2/evCzdz/8aP368WbNmTZbuafv27eb11183xhizZ88e89pr
+r2X6frhN84B99dVXql+/viSpRo0a+v777y2u6N5KlCih+fPnOx8fO3ZMTz31lCSpQYMG2rdvn777
+7js98cQTcnd3l5eXl0qUKKHjx4+n6bVBgwbav3+/JT38t+bNm+uNN96QJBlj5OrqmqV7atq0qSZN
+miRJOn/+vPLmzZul+5Gk6dOnq1OnTipcuLCkrP8zd/z4cd24cUM9e/ZUt27d9M0332Tpnvbs2aPy
+5ctr4MCB6tevnxo2bJil+/lvkZGROn36tDp27JileypVqpRSU1PlcDgUHx8vNze3TN8Pt2kesPj4
+eOdyrSS5uroqJSVFbm6Z86l47rnndO7cOedjY4xsNpskKU+ePLp+/bri4+Pl5eXl3CdPnjyKj49P
+s/3WvlbLkyePpD+eh9dff12DBw/W9OnTs3RPbm5uCgwM1Pbt2zVv3jzt3bs3y/YTERGhggULqn79
++lqyZImkrP8zlzNnTvXq1Uvt27fXmTNn1Lt37yzdU1xcnM6fP69Fixbp3Llz6t+/f5bu578tXrxY
+AwcOlJS1f+5y586t3377TS1atFBcXJwWLVqkw4cPZ+p+Mue/gNmYp6enEhISnI8dDkemDSJ34uLy
+/xfTEhISlDdv3tt6SkhIkJeXV5rtt/bNDKKjozVw4EB16dJF/v7+mjlzpnMsq/Y0ffp0DRs2TB06
+dFBSUpJze1brZ/369bLZbNq/f79+/PFHBQYG6sqVK87xrNaP9Mf/UkuWLCmbzaZSpUopf/78Onbs
+mHM8q/WUP39+lS5dWu7u7ipdurQ8PDx04cIF53hW6+eWa9eu6eeff1adOnUkZe3fdcuXL1e9evU0
+dOhQRUdHq3v37kpOTnaOZ8Z+uE3zgNWsWVO7d++WJH3zzTcqX768xRX9NY8//rgOHjwoSdq9e7dq
+1aqlatWq6auvvlJSUpKuX7+uqKgolS9fXjVr1tSuXbuc+z755JNWli5JunTpknr27Knhw4erXbt2
+krJ2Txs2bNDixYslSbly5ZLNZlOVKlWybD+rVq3SypUrFRYWpkqVKmn69Olq0KBBlu1HktatW6dp
+06ZJki5evKj4+HjVrVs3y/b05JNP6ssvv5QxRhcvXtSNGzfk5+eXZfu55fDhw/Lz83M+zsq/F/Lm
+zetc2ciXL59SUlIyfT98Ud4DduvdNCdPnpQxRlOmTFGZMmWsLuuezp07pzfffFMffPCBfv75ZwUH
+Bys5OVmlS5fW5MmT5erqqg8++EBr166VMUZ9+/bVc889pxs3bigwMFCxsbHKkSOHZs+eLW9vb0t7
+mTx5sj777DOVLl3auW306NGaPHlyluwpMTFRI0eO1KVLl5SSkqLevXurTJkyWfo5uiUgIEDjx4+X
+i4tLlu7Hbrdr5MiROn/+vGw2m4YNG6YCBQpk6Z5mzJihgwcPyhijIUOGqFixYlm6H0l699135ebm
+ph49ekhSlv5dl5CQoFGjRik2NlbJycnq1q2bqlSpkqn7IYwAAABLcZsGAABYijACAAAsRRgBAACW
+IowAAABLEUYAAIClCCMAAMBShBEAAGApwggAALDU/wNUIpM2dkuT7QAAAABJRU5ErkJggg==
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Sugestão Udacity após revisão:</span>
+<span class="c1"># Perceba que podemos chegar na resposta de forma bem mais simples utilizando as </span>
+<span class="c1">## funções de agrupamento da biblioteca Pandas. Nos podemos montar uma única tabela </span>
+<span class="c1">## com todas as viagens de 5 a 10 minutos e a quantidade de viagens por origem e o destino com apenas uma linha de código:</span>
+
+<span class="n">trip_data</span><span class="p">[(</span><span class="n">trip_data</span><span class="p">[</span><span class="s1">&#39;duration&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">5</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">trip_data</span><span class="p">[</span><span class="s1">&#39;duration&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;start_city&#39;</span><span class="p">,</span> <span class="s1">&#39;end_city&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[71]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>start_city     end_city     
+Mountain View  Mountain View      4765
+Palo Alto      Palo Alto           531
+Redwood City   Redwood City        720
+San Francisco  San Francisco    257049
+San Jose       San Jose          16436
+dtype: int64</pre>
+</div>
+
 </div>
 
 </div>
@@ -15801,7 +16697,7 @@ A maioria das viagens durou entre 9003 viagens para essa duracao
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">station_data</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;201402_station_data.csv&#39;</span><span class="p">,</span>
@@ -15834,7 +16730,7 @@ A maioria das viagens durou entre 9003 viagens para essa duracao
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">trip_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;babs_y1_y2_summary.csv&#39;</span><span class="p">)</span>
@@ -16001,7 +16897,7 @@ A maioria das viagens durou entre 9003 viagens para essa duracao
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">trip_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -16016,7 +16912,7 @@ A maioria das viagens durou entre 9003 viagens para essa duracao
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[42]:</div>
+<div class="prompt output_prompt">Out[50]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -16123,10 +17019,11 @@ A maioria das viagens durou entre 9003 viagens para essa duracao
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">dados</span> <span class="o">=</span> <span class="n">trip_data</span><span class="p">[</span><span class="s1">&#39;start_month&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Filtra coluna &#39;start_month&#39;</span>
+<span class="n">dados</span> <span class="o">=</span> <span class="n">trip_data</span><span class="p">[</span><span class="s1">&#39;start_month&#39;</span><span class="p">]</span>
 <span class="n">dados</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
@@ -16139,7 +17036,7 @@ A maioria das viagens durou entre 9003 viagens para essa duracao
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[43]:</div>
+<div class="prompt output_prompt">Out[51]:</div>
 
 
 
@@ -16160,7 +17057,7 @@ Name: start_month, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Gráfico final 1</span>
@@ -16405,10 +17302,11 @@ TZkyRXv37vXbfgIdGTMDAL6X5ORkzZgxQ1OmTPG0/cu//IteeOEFZWZmqrGxUb169dJLL72k7t27
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="nb">set</span><span class="p">(</span><span class="n">trip_data</span><span class="p">[</span><span class="s1">&#39;start_city&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Condigo para ver os valores existentes</span>
+<span class="k">print</span> <span class="nb">set</span><span class="p">(</span><span class="n">trip_data</span><span class="p">[</span><span class="s1">&#39;start_city&#39;</span><span class="p">])</span>
 <span class="k">print</span> <span class="s1">&#39;&#39;</span>
 <span class="k">print</span> <span class="nb">set</span><span class="p">(</span><span class="n">trip_data</span><span class="p">[</span><span class="s1">&#39;end_city&#39;</span><span class="p">])</span>
 </pre></div>
@@ -16438,7 +17336,7 @@ set([&#39;Palo Alto&#39;, &#39;San Francisco&#39;, &#39;San Jose&#39;, &#39;Redw
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Gráfico Final 2</span>
@@ -16783,10 +17681,11 @@ ZwxIkhS4b3SeAbAa3qgLAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Grafico 2</span>
+<span class="c1"># Note que troquei o &quot;kind=&#39;bar&quot; por &quot;kind=&#39;barh&quot;, dessa forma inverti o grafico de barras para ser horizontal.</span>
 <span class="n">trip_subtype</span> <span class="o">=</span> <span class="n">trip_data</span><span class="p">[</span><span class="s1">&#39;end_city&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 <span class="n">trip_subtype</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Black&#39;</span><span class="p">,</span> <span class="s1">&#39;Blue&#39;</span><span class="p">,</span> <span class="s1">&#39;Green&#39;</span><span class="p">,</span> <span class="s1">&#39;Red&#39;</span><span class="p">,</span><span class="s1">&#39;Gold&#39;</span><span class="p">])</span>
 
