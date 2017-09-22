@@ -1,4 +1,18 @@
-Análise de dados da Bay Area Bike Share
+## Análise de dados da Bay Area Bike Share
+
+![Bikes](https://br.udacity.com/assets/images/nanodegree-overview/shared/nd-projects/nd110/project-1.jpg)
+
+# Esse é o projeto final aprovado pela Udacity no curso:
+# [Nanodegree Fundamentos de *Data Science* 1](https://br.udacity.com/course/fundamentos-data-science-i-python--nd110)
+
+# Incorporei vários comentários de maneira didática para que possa
+# ajudar atuais e futuros alunos do curso ou da ciência de dados.
+
+# O resultado da análise pode ser encontrado abrindo o arquivo "Analise_Bay_Area_Bike_Share - NanoDegree Project - Data Foundations"
+
+# Abaixo o requisito exigido pela Udacity:
+
+"Análise de dados da Bay Area Bike Share
 
 A Bay Area Bike Share é uma empresa que oferece aluguel de bicicletas a clientes em San Francisco, Redwood City, Palo Alto, Mountain View e San Jose. Os usuários podem desbloquear bicicletas de diversas estações em cada cidade e devolvê-las em qualquer estação dentro da mesma cidade. O serviço é pago por meio de assinatura anual ou pela compra de passes de três dias ou 24 horas. Os usuários podem fazer um número ilimitado de viagens. Viagens com menos de trinta minutos de duração não terão custo adicional; viagens mais longas incorrerão em taxas de horas extras.
 
@@ -20,4 +34,4 @@ Nesta parte, você fará uma pequena análise dos dados usando gráficos. Como e
 Sua análise e conclusão
 Para terminar este projeto, você fará algumas análises próprias e, por meio delas, chegará a conclusões a respeito dos dados.
 
-Com isso, você terá feito todas as etapas iniciais de um projeto de ciência de dados. A próxima etapa seria a criação de modelos preditivos que possam explicar os dados e prever uma ou mais características de interesse.
+Com isso, você terá feito todas as etapas iniciais de um projeto de ciência de dados. A próxima etapa seria a criação de modelos preditivos que possam explicar os dados e prever uma ou mais características de interesse."
