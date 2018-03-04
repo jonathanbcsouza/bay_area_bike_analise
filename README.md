@@ -1,35 +1,35 @@
 ## Análise de dados da Bay Area Bike Share
 
-### A Bay Area Bike Share é uma empresa que oferece aluguel de bicicletas a clientes em San Francisco, Redwood City, Palo Alto, Mountain View e San Jose. Os usuários podem desbloquear bicicletas de diversas estações em cada cidade e devolvê-las em qualquer estação dentro da mesma cidade. O serviço é pago por meio de assinatura anual ou pela compra de passes de três dias ou 24 horas. Os usuários podem fazer um número ilimitado de viagens. Viagens com menos de trinta minutos de duração não terão custo adicional; viagens mais longas incorrerão em taxas de horas extras.
+### Bay Area Bike Share is a company that offers bicycle rentals to customers in San Francisco, Redwood City, Palo Alto, Mountain View and San Jose. Users can unlock bicycles from various stations in each city and return them to any station within the same city. The service is paid by annual subscription or by purchasing three-day or 24-hour passes. Users can make an unlimited number of trips. Trips with less than thirty minutes of duration will have no additional cost; longer trips will incur overtime charges.
 
 ### ![Bikes](https://br.udacity.com/assets/images/nanodegree-overview/shared/nd-projects/nd110/project-1.jpg)
 
-### Esse é o projeto final aprovado pela Udacity no curso:
-### [Nanodegree Fundamentos de Data Science 1](https://br.udacity.com/course/fundamentos-data-science-i-python--nd110)
+### This is the final project approved by Udacity in the course:
+### [Nanodegree Data Foundations](https://br.udacity.com/course/fundamentos-data-science-i-python--nd110)
 
-### Incorporei alguns comentários para que possa ajudar atuais e futuros alunos do curso ou da ciência de dados de maneira didática.
-O resultado da análise pode ser encontrado abrindo o arquivo *"Analise_Bay_Area_Bike_Share - NanoDegree Project - Data Foundations.ipynb"*
+### I have incorporated some comments so that you can help current and future course students or data science in a didactic way.
+The result of the analysis can be found by opening the file *"Analise_Bay_Area_Bike_Share - NanoDegree Project - Data Foundations.ipynb"*
 
-### Abaixo descrição dos requisitos:
+### Description of requirements:
 
-Análise de dados da Bay Area Bike Share
+Bay Area Bike Share Data Analysis
 
-Neste projeto, você se colocará no lugar de um analista para realizar uma análise exploratória dos dados. Você analisará duas das principais partes do processo de análise de dados: limpeza de dados e análise exploratória. Mas, antes de começar a análise, pense em algumas perguntas que você pode querer fazer sobre os dados. Por exemplo, se você estivesse trabalhando para a Bay Area Bike Share: que tipo de informação gostaria de ter a fim de tomar decisões de negócios mais inteligentes? Ou você pode pensar como você fosse um usuário. Que fatores podem influenciar a maneira como você gostaria de usar o serviço?
-Ao final deste projeto, você será capaz de identificar as principais etapas do processo de análise de dados. Ele é projetado para ajudá-lo a tomar uma decisão informada sobre este tipo de trabalho.
+In this project, you will put yourself in the position of an analyst to conduct an exploratory analysis of the data. You will review two of the key parts of the data analysis process: data cleansing and exploratory analysis. But before you start the analysis, think of some questions you might want to ask about the data. For example, if you were working for the Bay Area Bike Share: what kind of information would you like to have in order to make smarter business decisions? Or you can think of yourself as a user. What factors can influence the way you would like to use the service?
+At the end of this project, you will be able to identify the key steps in the data analysis process. It is designed to help you make an informed decision about this type of work.
 
-Além de praticar os conhecimentos, você também entenderá o processo de envio do projeto e o tipo de feedback que você pode esperar de seu revisor.
+In addition to practicing the knowledge, you will also understand the process of submitting the project and the type of feedback you can expect from your reviewer.
 
-Preparação do projeto
-Você deve fazer o download do arquivo Jupyter Notebook e executar o programa para começar a trabalhar em sua análise de dados. Neste arquivo, você encontrará todo o passo a passo e as perguntas que devem ser respondidas.
+Project Preparation
+You should download the Jupyter Notebook file and run the program to start working on your data analysis. In this file, you will find all the step by step and the questions that must be answered.
 
-O uso de notebooks para análise será uma prática comum em sua vida como cientista de dados. Acostume-se a criar um notebook para cada análise que você fizer, separando os projetos por pastas em seu computador.
-Estudo de caso
-Inicialmente, você verificará uma análise feita nesta base de dados. Ela foi a a ganhadora do concurso promovido pela Bay Area Bike Share. Repare como o autor, Tyler Field, usa os gráficos para poder tirar conclusões a respeito dos dados e, principalmente, como ele conta uma história com os dados.
-Limpeza dos dados
-A próxima etapa será a limpeza dos dados. Você verificará possíveis problemas nos dados e trabalhará para corrigi-los, deixando a base pronta para a etapa seguinte.
-Análise exploratória
-Nesta parte, você fará uma pequena análise dos dados usando gráficos. Como este não é um curso de visualização, você fará gráficos simples, mas que possibilitarão a verificação dos dados e a análise das tendências.
-Sua análise e conclusão
-Para terminar este projeto, você fará algumas análises próprias e, por meio delas, chegará a conclusões a respeito dos dados.
+The use of notebooks for analysis will be a common practice in your life as a data scientist. Get acquainted with creating a notebook for every review you make by sorting the designs by folders on your computer.
+Case study
+Initially, you will check an analysis done on this database. She was the winner of the contest promoted by Bay Area Bike Share. Notice how the author, Tyler Field, uses the graphs to draw conclusions about the data, and especially how he tells a story with the data.
+Cleaning of data
+The next step will be to clean the data. You will check for potential data problems and work to correct them, leaving the database ready for the next step.
+Exploratory analysis
+In this part, you will do a small analysis of the data using graphs. Because this is not a visualization course, you will make simple charts, but they will enable you to check the data and analyze the trends.
+Your analysis and conclusion
+To finish this project, you will do some analysis of your own and, through them, you will come to conclusions about the data.
 
-Com isso, você terá feito todas as etapas iniciais de um projeto de ciência de dados. A próxima etapa seria a criação de modelos preditivos que possam explicar os dados e prever uma ou mais características de interesse.
+With this, you will have done all the initial steps of a data science project. The next step would be to create predictive models that can explain the data and predict one or more characteristics of interest.
